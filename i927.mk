@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
     dexpreopt \
     SamsungServiceMode \
     Camera \
+    Torch \
     librs_jni
 
 # Charger
@@ -45,14 +46,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/i927/init.n1.rc:root/init.n1.rc \
     device/samsung/i927/init.n1.usb.rc:root/init.n1.usb.rc \
     device/samsung/i927/ueventd.n1.rc:root/ueventd.n1.rc
-
-# Prebuilt modules
-PRODUCT_COPY_FILES += \
-    device/samsung/i927/prebuilt/dhd.ko:root/lib/modules/dhd.ko \
-    device/samsung/i927/prebuilt/scsi_wait_scan.ko:root/lib/modules/scsi_wait_scan.ko \
-    device/samsung/i927/prebuilt/Si4709_driver.ko:root/lib/modules/Si4709_driver.ko \
-    device/samsung/i927/prebuilt/modules.dep:root/lib/modules/modules.dep \
-    device/samsung/i927/prebuilt/cbd:root/sbin/cbd
 
 # Vold and Storage
 PRODUCT_COPY_FILES += \
